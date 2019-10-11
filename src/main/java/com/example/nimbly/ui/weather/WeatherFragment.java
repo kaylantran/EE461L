@@ -29,8 +29,6 @@ import static com.example.nimbly.MainActivity.city;
 
 public class WeatherFragment extends Fragment {
 
-    //zahra driving
-
     private String temperature;
     private String humidity;
     private String wind;
@@ -51,13 +49,13 @@ public class WeatherFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        //kayla driving
+
         View root = inflater.inflate(R.layout.fragment_weather, container, false);
         weatherText = root.findViewById(R.id.text_weather_extra);
         weatherTitle = root.findViewById(R.id.text_weather_title);
         weatherTemp = root.findViewById(R.id.text_weather_temp);
         weatherStatus = root.findViewById(R.id.text_weather);
-        //end of kayla driving
+
 
         String url = "https://api.darksky.net/forecast/" + Constants.NIGHT_SKY_API_KEY + "/"
                 + latitude + "," + longitude;
@@ -76,7 +74,7 @@ public class WeatherFragment extends Fragment {
             public void onResponse(Call call, Response response) throws IOException {
                 if(response.isSuccessful()){
                     final String myResponse = response.body().string();
-                    //kayla driving
+
                     try {
                         JSONObject reader = new JSONObject(myResponse);
                         JSONObject currently = reader.getJSONObject("currently");
@@ -108,7 +106,7 @@ public class WeatherFragment extends Fragment {
                                         "Precipitation Probability: " + precipProbability + "%\n";
                                 weatherText.setText(weather);
                             }
-                            //end of kayla driving
+    
 
 
                         }
@@ -121,4 +119,3 @@ public class WeatherFragment extends Fragment {
         return root;
     }
 }
-//end of zahra driving
