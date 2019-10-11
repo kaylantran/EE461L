@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#303030">
 
-<!--    kayla driving-->
+
     <TextView
         android:id="@+id/text_weather_title"
         android:layout_width="0dp"
@@ -84,4 +84,3 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--end of kayla driving-->
