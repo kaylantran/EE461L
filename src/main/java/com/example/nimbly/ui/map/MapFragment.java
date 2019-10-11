@@ -26,7 +26,7 @@ import static com.example.nimbly.MainActivity.city;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback{
     //based on android developer guide
-    //kayla driving
+
     private GoogleMap mGoogleMap;
     private UiSettings mUiSettings;
 
@@ -68,4 +68,3 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
 
     }
 }
-    //end of kayla driving
