@@ -17,7 +17,6 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity{
 
-    //kayla driving
     public static double latitude;
     public static double longitude;
     public static String city;
@@ -27,8 +26,6 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        //end of kayla driving
-        //zahra driving
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
@@ -39,4 +36,3 @@ public class MainActivity extends AppCompatActivity{
         NavigationUI.setupWithNavController(navView, navController);
     }
 }
-//end of zahra driving
