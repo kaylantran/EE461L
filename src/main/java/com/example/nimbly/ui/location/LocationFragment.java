@@ -33,7 +33,6 @@ import static com.example.nimbly.MainActivity.city;
 public class LocationFragment extends Fragment {
     private AddressResultReceiver mResultReceiver;
 
-    //Zahra driving
     private MaterialButton showCoordinatesBtn;
     private TextInputEditText addressEdit;
     private TextView coordinatesText;
@@ -79,8 +78,6 @@ public class LocationFragment extends Fragment {
         intent.putExtra(Constants.LOCATION_DATA_EXTRA, addressEdit.getText().toString());
         getActivity().startService(intent);
     }
-    //end of zahra driving
-    // kayla driving
 
     class AddressResultReceiver extends ResultReceiver {
         public AddressResultReceiver(Handler handler) {
@@ -122,4 +119,3 @@ public class LocationFragment extends Fragment {
         }
     }
 }
- // end of kayla driving
