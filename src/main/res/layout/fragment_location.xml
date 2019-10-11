@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="#303030">
-<!--zahra driving-->
+
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/address_edit"
         android:layout_width="match_parent"
@@ -39,9 +39,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/coordinates_text_title"
         app:layout_constraintVertical_bias="0.0" />
-
-<!--    end of zahra driving-->
-<!--    kayla driving-->
 
     <TextView
         android:id="@+id/coordinates_text_title"
@@ -79,5 +76,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-<!--end of kayla driving-->
