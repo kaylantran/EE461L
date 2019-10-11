@@ -19,7 +19,6 @@ import java.util.Locale;
 
 public class GeocodeIntentService extends IntentService {
     // based on android developer guide
-    //zahra driving
     protected ResultReceiver resultReceiver;
     private static final String TAG = "GEO_ADD_SERVICE";
 
@@ -45,8 +44,7 @@ public class GeocodeIntentService extends IntentService {
             errorMessage = "Service not available";
             Log.e(TAG, errorMessage, e);
         }
-        //end of zahra driving
-        //kayla driving
+        
         resultReceiver = intent.getParcelableExtra(Constants.RECEIVER);
         if (addresses == null || addresses.size()  == 0) {
             if (errorMessage.isEmpty()) {
@@ -76,4 +74,3 @@ public class GeocodeIntentService extends IntentService {
     }
 
 }
-//end of kayla driving
